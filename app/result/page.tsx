@@ -29,7 +29,7 @@ const ResultPage = () => {
   // };
 
   return (
-    <div className="space-y-6 w-full h-screen flex flex-col items-center p-8">
+    <div className="space-y-6 w-full  flex flex-col items-center p-8">
       <h2 className="text-center font-bold text-2xl uppercase">
         Here are your test results
       </h2>

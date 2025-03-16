@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 // import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 // import og_image from '@'
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -43,12 +45,18 @@ export default function RootLayout({
         name="twitter:description"
         content="The React Framework for the Web"
       />
-      <meta property="og:title" content=""  />
+      <meta property="og:title" content="" />
       {/* <meta property="og:image" content={og_image} /> */}
       <meta name="twitter:image" content="https://nextjs.org/og.png" />
       <body className={`bg-black/90 text-slate-300`}>
         <Navbar />
         {children}
+        <div className="text-center fixed bottom-0 left-0 right-0 mx-auto text-muted-foreground font-bold">
+          Built with ❤️ by
+          <Button className="text-muted-foreground" variant={"link"}>
+            <Link href="https://segun-dev-gray.vercel.app">Segun Adeniyi</Link>
+          </Button>
+        </div>
       </body>
     </html>
   );
